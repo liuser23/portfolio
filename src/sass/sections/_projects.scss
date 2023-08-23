@@ -1,12 +1,18 @@
 #projects {
   background-color: $white-color;
   color: $dark-blue-text;
-  margin-top: -10rem;
+  margin-top: -15rem;
   padding-top: 15rem;
 
   @include respond(tab-land) {
     margin-top: 0;
     padding-top: 5rem;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
   }
 
   .project-wrapper {

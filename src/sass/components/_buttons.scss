@@ -54,6 +54,8 @@
     background-image: none;
     border: 2px solid $secondary-color;
     -webkit-text-fill-color: $secondary-color;
+    width: 220px;
+    max-width: 220px;
   }
 
   &::after {
@@ -104,4 +106,10 @@
 /* Arrow Button */
 .up i {
   color: #272727;
+}
+
+.shrink-hero {
+  @include respond(tab-land) {
+    font-size: 3.5rem;
+  }
 }

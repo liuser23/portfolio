@@ -18,7 +18,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Todo: put here your site title -->
-    <title>[Your name here] | Developer</title>
+    <title>Joshua Liu | Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Todo: improve your SEO by adding a small description of you -->
@@ -41,22 +41,77 @@
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
   <body>
     <div id="top"></div>
+    <div id="anim">
+      <ul class="anim-circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
 
-    <!-- **** Hero Section **** -->
-    <section id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
-          <br />
-          I'm the Unknown Developer.
-        </h1>
-        <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Know more</a
+      <!-- **** Hero Section **** -->
+      <section id="hero" class="jumbotron">
+        <nav class="social-links">
+          <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a
+            rel="noreferrer"
+            href="https://github.com/liuser23"
+            target="_blank"
           >
-        </p>
-      </div>
-    </section>
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/joshua-liu-72462018a/"
+            target="_blank"
+          >
+            <i class="fa fa-file fa-inverse"></i>
+          </a>
+        </nav>
+        <div class="container">
+          <h1 class="hero-title load-hidden">
+            Hi, I'm <span class="text-color-main">Josh</span>.
+            <br />
+            <span id="hero-typewriter"></span>
+          </h1>
+          <p class="hero-cta load-hidden">
+            <a
+              rel="noreferrer"
+              class="cta-btn cta-btn--hero shrink-hero"
+              href="#about"
+              >About</a
+            >
+            <a
+              rel="noreferrer"
+              class="cta-btn cta-btn--hero shrink-hero"
+              href="#projects"
+              >Projects</a
+            >
+            <a
+              rel="noreferrer"
+              class="cta-btn cta-btn--hero shrink-hero"
+              href="#skills"
+              >Skills</a
+            >
+            <a
+              rel="noreferrer"
+              class="cta-btn cta-btn--hero shrink-hero"
+              href="#contact"
+              >Contact</a
+            >
+          </p>
+        </div>
+      </section>
+    </div>
+
     <!-- /END Hero Section -->
 
     <!-- **** About Section **** -->
@@ -68,10 +123,8 @@
             <div class="about-wrapper__image load-hidden">
               <img
                 alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
+                class="img-fluid rounded"
+                src="assets/profile.svg "
                 alt="Profile Image"
               />
             </div>
@@ -79,20 +132,26 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                This is where you can describe about yourself. The more you
-                describe about yourself, the more chances you have!
+                Hi, my name is Josh, and I'm currently studying applied math and
+                computer science at Brown University.
               </p>
               <p class="about-wrapper__info-text">
-                Extra Information about you! like hobbies and your goals.
+                I enjoy studying computer science because I feel there is always
+                more to learn and explore in the field.
+              </p>
+              <p class="about-wrapper__info-text">
+                When I'm not coding, you will probably find me playing
+                volleyball with my friends or resisting the urge to take a
+                midday nap.
               </p>
               <span class="d-flex mt-3">
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--resume"
-                  href="assets/resume.pdf"
+                  href="https://drive.google.com/file/d/1I_-LvkYXYz_vqEmqzMG8PsJE7VcSVb0G/view?usp=sharing"
                 >
-                  View Resume
+                  Resume
                 </a>
               </span>
             </div>
@@ -112,19 +171,22 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Sorting Visualizer</h3>
                 <div>
                   <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                    A React app made to help people better visualize different
+                    sorting algorithms and how they function. The app supports
+                    different sorting methods with animations and cutomizability
+                    in terms of array size and animation speed.
                   </p>
+                  <p><strong>Technologies: </strong> React, Tailwind</p>
+                  <p class="mb-4"></p>
                 </div>
                 <a
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn cta-btn--hero"
-                  href="#!"
+                  href="https://liuser23.github.io/visualizer/"
                 >
                   See Live
                 </a>
@@ -132,7 +194,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/liuser23/visualizer"
                 >
                   Source Code
                 </a>
@@ -140,21 +202,18 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
+                <video
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="video-wrapper img-fluid thumbnail js-tilt"
+                  loop
+                  muted
+                  autoplay
+                >
+                  <source src="assets/Demo4.mp4" />
+                </video>
               </div>
             </div>
           </div>
@@ -164,13 +223,16 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 1</h3>
+                <h3 class="project-wrapper__text-title">Friendify</h3>
                 <div>
                   <p class="mb-4">
-                    Demonstrate in this description the skills of a programmer: such as having commitment, 
-                    having perseverance and accepting alternative solutions. Remember that being a portfolio you are not selling the project, 
-                    you are selling yourself, it reflects the resources used: Frameworks, libraries, platforms, etc.
+                    A React web application focused on adding social media
+                    features to the generic spotify web player. This project
+                    helped me gain experience with full-stack development,
+                    leveraging Spotify API calls from the back-end to display
+                    relevant user data on the front-end.
                   </p>
+                  <p><strong>Technologies:</strong> Java, React, SQLite</p>
                 </div>
                 <a
                   rel="noreferrer"
@@ -184,7 +246,7 @@
                   rel="noreferrer"
                   target="_blank"
                   class="cta-btn text-color-main"
-                  href="#!"
+                  href="https://github.com/liuser23/cs32-final-project"
                 >
                   Source Code
                 </a>
@@ -192,21 +254,18 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
+                <video
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="video-wrapper img-fluid thumbnail js-tilt"
+                  loop
+                  muted
+                  autoplay
+                >
+                  <source src="assets/Demo2.mp4" />
+                </video>
               </div>
             </div>
           </div>
@@ -216,48 +275,66 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <h3 class="project-wrapper__text-title">Evolution</h3>
                 <div>
                   <p class="mb-4">
-                    If the project was collaborative, reflect it in this description, that will demonstrate communication and/or leadership skills. 
-                    Additionally, if you made use of the mastery of a second language, it will reflect on you professionalism.
+                    A neural network powered Flappy Bird game where birds
+                    gradually learn when and where to jump.
                   </p>
+                  <p class="mb-4">
+                    The left side shows the manual version of the game where the
+                    user controls a bird, and the right side shows the automated
+                    version where the neural network gradually learns how to
+                    jump based on real-time information.
+                  </p>
+                  <p><strong>Technologies:</strong> Java, JavaFX</p>
                 </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--hero"
-                  href="#!"
-                >
-                  See Live
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="#!"
-                >
-                  Source Code
-                </a>
               </div>
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/project.jpg"
-                    />
-                  </div>
-                </a>
+                <video
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="video-wrapper img-fluid thumbnail js-tilt"
+                  loop
+                  muted
+                  autoplay
+                >
+                  <source src="assets/Demo1.mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Shell</h3>
+                <div>
+                  <p class="mb-4">
+                    A custom shell implemented with C that takes in and parses
+                    user commands, functioning as a Linux terminal. Helped
+                    familiarize me with different Linux system calls and how
+                    they can be used in tandem to run different executables.
+                  </p>
+                  <p><strong>Technologies:</strong> C</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <img
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="img-fluid thumbnail js-tilt"
+                  src="assets/demo3.jpg"
+                />
               </div>
             </div>
           </div>
@@ -267,18 +344,125 @@
     </section>
     <!-- /END Projects Section -->
 
+    <!-- **** Skills Section **** -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="row no-gutters skills-wrapper">
+          <div class="col-lg-3 col-sm-4 col-6 d-flex justify-content-center">
+            <div class="skill-icon-wrapper grow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              />
+              <p>Java</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 d-flex justify-content-center">
+            <div class="skill-icon-wrapper grow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              />
+              <p>Python</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 d-flex justify-content-center">
+            <div class="skill-icon-wrapper grow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg"
+              />
+              <p>SQLite</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 d-flex justify-content-center">
+            <div class="skill-icon-wrapper grow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              />
+              <p>PostgreSQL</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 d-flex justify-content-center">
+            <div class="skill-icon-wrapper grow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              />
+              <p>HTML</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 d-flex justify-content-center">
+            <div class="skill-icon-wrapper grow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              />
+              <p>CSS</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 d-flex justify-content-center">
+            <div class="skill-icon-wrapper grow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              />
+              <p>JavaScript</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 d-flex justify-content-center">
+            <div class="skill-icon-wrapper grow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              />
+
+              <p>TypeScript</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 d-flex justify-content-center">
+            <div class="skill-icon-wrapper grow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              />
+              <p>React</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 d-flex justify-content-center">
+            <div class="skill-icon-wrapper grow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+              />
+              <p>Angular</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 d-flex justify-content-center">
+            <div class="skill-icon-wrapper grow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              />
+              <p>NodeJS</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-4 col-6 d-flex justify-content-center">
+            <div class="skill-icon-wrapper grow">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              />
+              <p>Git</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Skills Section -->
+
     <!-- **** Contact Section **** -->
     <section id="contact">
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text">Interested in working together?</p>
           <a
             rel="noreferrer"
             target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
+            class="cta-btn cta-btn--hero shrink-hero"
+            href="mailto:joshua_liu@brown.edu"
+            >Let's Talk</a
           >
         </div>
       </div>
@@ -287,55 +471,30 @@
 
     <!-- **** Footer Section **** -->
     <footer class="footer navbar-static-bottom">
-      <div class="container">
+      <div class="container d-flex flex-column align-items-center">
         <a rel="noreferrer" href="#top" class="back-to-top">
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a rel="noreferrer" href="#!" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
-        </div>
-
-        <hr />
-
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2021 - Template developed by
-          <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank"
-            >Jacobo Martínez</a
-          >
-        </p>
-
-        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
-        <p class="mt-3 pt-3">
           <a
             rel="noreferrer"
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
+            href="https://www.linkedin.com/in/joshua-liu-72462018a/"
+            target="_blank"
           >
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
           <a
-            rel="noreferrer" 
-            class="github-button"
-            href="https://github.com/cobiwave/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobiwave/simplefolio on GitHub"
-            >Star</a
+            rel="noreferrer"
+            href="https://github.com/liuser23"
+            target="_blank"
           >
-        </p>
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-file fa-inverse"></i>
+          </a>
+        </div>
+        <hr />
       </div>
     </footer>
     <!-- /END Footer Section -->
